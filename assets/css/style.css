@@ -123,19 +123,19 @@ a {
 /************** Default CSS End **************/
 a.navbar-brand img {
   width: 100%;
-  max-width: 160px;
+  max-width: 124px;
 }
 
 header {
   -webkit-box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
-          box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
   padding: 8px 0px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10001;
   left: 0;
-  height: 78px;
+  height: 68px;
   display: block;
   background: #fff;
 }
@@ -451,12 +451,12 @@ main {
   align-items: end;
 }
 
-.blog-content-start-here {
+/* .blog-content-start-here {
   max-height: 1950px;
   overflow: hidden;
-}
+} */
 .blog-content-start-here.content-full-view {
-  max-height: 100%;
-  overflow: visible;
+  max-height: 100%!important;
+  overflow: visible!important;
 }
 /************** Template CSS End **************/
