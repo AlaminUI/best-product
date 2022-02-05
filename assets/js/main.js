@@ -22,10 +22,14 @@ twitter.addEventListener('click', function () {
 $(document).ready(function(){
     $('#email-button').each(function(){ 
         var oldUrl = $(this).attr("href"); // Get current url
-        var newUrl = oldUrl.replace("websiteURL", window.location.href); // Create new url
+        var heading = $('h1').text().replace(/\s/g, '')
+        var newUrl = oldUrl.replace(/websiteURL/g, window.location.href).replace(/headertext/g,heading); // Create new url
         $(this).attr("href", newUrl); // Set herf value
+        console.log(newUrl)
     });
 });
+
+
 
 document.addEventListener("scroll", function () {
   
