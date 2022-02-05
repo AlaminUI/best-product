@@ -22,7 +22,7 @@ twitter.addEventListener('click', function () {
 $(document).ready(function(){
     $('#email-button').each(function(){ 
         var oldUrl = $(this).attr("href"); // Get current url
-        var heading = $('h1').text().replace(/\s/g, '')
+        var heading = $('h1').text().replace(/\s/g, ' ')
         var newUrl = oldUrl.replace(/websiteURL/g, window.location.href).replace(/headertext/g,heading); // Create new url
         $(this).attr("href", newUrl); // Set herf value
     });
