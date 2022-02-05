@@ -43,3 +43,12 @@ document.addEventListener("scroll", function () {
   
   
   })
+  
+
+  document.querySelector('#readmore').addEventListener('click', function () {
+    document.querySelector('.blog-content-start-here').classList.add('content-full-view')
+    document.querySelector('.read-more-button').classList.add('d-none')
+    document.querySelector('.blog-content-wrap').classList.add('pb-0')
+    // document.querySelector('#readmore').classList.add('')
+    // document.querySelector('#readmore').classList.add('')
+  });
