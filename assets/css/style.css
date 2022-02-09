@@ -1,4 +1,4 @@
- 
+  
 @font-face {
   font-family: Blog-Font;
   src: url(../webfonts/blog-regular.woff2) format('opentype');
@@ -53,7 +53,7 @@ a, .button, button {
 
 a:hover {
   text-decoration: none;
-  color: #fca7a7;
+  color: #eb001e;
 }
 
 a:focus, button:focus, input:focus, textarea:focus {
@@ -129,15 +129,15 @@ a.navbar-brand img {
 header {
   -webkit-box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
   box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
-  padding: 8px 0px;
+  padding: 4px 0px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10001;
   left: 0;
-  height: 68px;
+  /* height: 68px; */
   display: block;
-  background: #fff;
+  background: #ffffff;
 }
 
 li.nav-item .nav-link {
@@ -446,9 +446,15 @@ main {
   left: 79px;
   width: 100%;
   height: 100px;
+  background: -webkit-gradient(linear,left top, left bottom,color-stop(0, hsla(0,0%,100%,.3)),to(#fff));
+  background: -o-linear-gradient(top,hsla(0,0%,100%,.3) 0,#fff);
   background: linear-gradient(180deg,hsla(0,0%,100%,.3) 0,#fff);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 /* .blog-content-start-here {
@@ -459,4 +465,163 @@ main {
   max-height: 100%!important;
   overflow: visible!important;
 }
+.comment-show {
+  display: none;
+}
 /************** Template CSS End **************/
+.comment-show.desktop-view {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.comment-show.desktop-view a img {
+  max-width: 50px;
+  display: block;
+  margin: 0;
+  margin-right: 4px;
+}
+
+.comment-show.desktop-view span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1d2228;
+  font-size: 16px;
+  margin-right: 8px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.comment-show.desktop-view a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-show.desktop-view a span i {
+  margin-right: 6px;
+}
+.commento-root .commento-submit-button {
+       
+  background: #ea001e!important;
+   
+}
+.commento-logo-container {
+display: none !important;
+}
+
+.video-player{
+  padding-bottom:56%;
+  position: relative;
+}
+.video-js {
+  position: absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+}
+div#commento-main-area {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical  !important;
+  -webkit-box-direction: reverse  !important;
+      -ms-flex-direction: column-reverse  !important;
+          flex-direction: column-reverse  !important;
+}
+.mx-600{
+  max-width:600px !important;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.radius-8{
+  border-radius:8px;
+}
+.caption {
+  color: #767d84;
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  margin-top: -8px;
+}
+.commento-root .commento-card .commento-option-downvote, .commento-root .commento-card .commento-option-upvote {
+  -webkit-mask-image: none !important;
+  background: url(../img/thumb.png) !important;
+  width: 20px !important;
+  height: 20px !important;
+  background-size: 100% !important;
+  margin-top: 10px !important;
+}
+.commento-root .commento-card {
+  position: relative !important;
+  padding-bottom: 24px !important;
+}
+
+.commento-root .commento-card .commento-options {
+  position: absolute!important;
+  bottom: -8px !important;
+  left: -32px !important;
+  float: none !important;
+}
+.commento-root .commento-card .commento-upvoted {
+  background: url(../img/thumb-fill.png) !important;
+  background-size: 100% !important;
+}
+.commento-root .commento-card .commento-downvoted {
+
+  background: url(../img/thumb-fill.png) !important;
+  background-size: 100% !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.commento-root .commento-card .commento-option-collapse {
+  display: none !important;
+}
+.commento-root .commento-card .commento-score {
+  position: absolute !important;
+  bottom: 0;
+}
+
+.commento-root .commento-card .commento-option-downvote {
+  right: -22px !important;
+  top: 1px !important;
+}
+.commento-root .commento-card .commento-timeago::before {
+  display: none!important;
+}
+
+
+
+
+/* slider  */
+
+button.slick-arrow {
+  position: absolute;
+  top: 20%;
+  width: 40px;
+  height: 100px;
+  font-size: 20px;
+  color: #e70620;
+  background: #c6c6c6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button.next-arrow-icon.slick-arrow {
+  left: 0;
+}
+
+button.prev-arrow-icon.slick-arrow {
+  right: 0;
+  z-index: 99;
+}

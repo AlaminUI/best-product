@@ -13,7 +13,9 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
+    h1 {
+        font-size: 30px;
+    }
  
 }
 
@@ -31,13 +33,13 @@
         max-width: 100%;
         top: auto;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: space-between;
         bottom: 0 !important;
         z-index: 9999;
-        padding: 8px 0px;
+        padding: 8px 15px;
         -webkit-box-shadow: 0px 1px 6px 1px rgb(0 0 0 / 10%);
-                box-shadow: 0px 1px 6px 1px rgb(0 0 0 / 10%);
+        box-shadow: 0px 1px 6px 1px rgb(0 0 0 / 10%);
     }
     
     .social-share ul {
@@ -49,22 +51,23 @@
                 align-items: center;
     }
     .social-share ul li a {
-    margin: 0px 8px;
-    width: 32px;
-    height: 32px;
+    margin: 0px 6px;
+    width: 24px;
+    height: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border-radius: 50%;
 }
 .social-share ul li a i {
     color: #fff;
+    font-size: 13px;
 }
 .social-share ul li:nth-child(1) a {
     background: #124bcb;
@@ -147,6 +150,39 @@ header {
 .blog-content-wrap {
  
     padding-bottom: 60px;
+}
+main {
+    margin-top: 90px;
+    
+}
+.comment-show img {
+    max-width: 60px;
+}
+
+.comment-show a span {
+    font-size: 14px;
+    color: #8f9295;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.comment-show {
+    display: flex;
+    align-items: center;
+}
+    .comment-show a {
+    display: flex;
+    align-items: center;
+}
+
+.comment-show a span i {
+    margin-right: 5px;
+}
+.commento-root .commento-card {
+     
+    padding-bottom: 1px !important;
 }
 }
 
