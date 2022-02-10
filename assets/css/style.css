@@ -659,7 +659,6 @@ span.close-fullscreen {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #e7061f;
   z-index: 9990;
   display: flex;
   align-items: center;
@@ -667,11 +666,13 @@ span.close-fullscreen {
   border-radius: 4px;
   cursor: pointer;
   overflow: hidden;
+  border: 1px solid #e7061f;
+  padding: 4px;
 }
 
 span.close-fullscreen img {
   width: 100%;
-  max-width: 30px;
+  max-width: 18px;
   margin: 0;
 }
 
@@ -716,4 +717,8 @@ span.close-fullscreen img {
   top: 50%;
  
   transform: translateY(-50%);
+}
+
+.slider-area-section.fullscreen p{
+  font-size:15px;
 }
