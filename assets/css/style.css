@@ -606,7 +606,7 @@ div#commento-main-area {
 
 button.slick-arrow {
   position: absolute;
-  top: 20%;
+  top: 24%;
   width: 40px;
   height: 100px;
   font-size: 20px;
@@ -619,6 +619,7 @@ button.slick-arrow {
 
 button.next-arrow-icon.slick-arrow {
   left: 0;
+  z-index: 99;
 }
 
 button.prev-arrow-icon.slick-arrow {
@@ -693,7 +694,11 @@ span.close-fullscreen img {
   height: 100vh;
   overflow: scroll;
 }
-
+.slider-area-section.fullscreen .slider-items img {
+  height: auto;
+  object-fit: contain;
+   
+}
 .slider-area-section.fullscreen .slider-items {
   display: flex !important;
   align-items:center;
@@ -721,4 +726,9 @@ span.close-fullscreen img {
 
 .slider-area-section.fullscreen p{
   font-size:15px;
+}
+.slider-items img {
+    height: 496px;
+    object-fit: contain;
+    background: #333;
 }
